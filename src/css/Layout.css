@@ -1,0 +1,179 @@
+.wrapper {
+  display: grid;
+  grid-template-areas: "header header header" "sidebar main footer";
+  grid-template-columns: 1fr 3fr 1fr;
+}
+.header,
+.main,
+.footer,
+.sidebar {
+  border: 1px solid black;
+}
+.header {
+  grid-area: header;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+.main {
+  grid-area: main;
+}
+.footer {
+  grid-area: footer;
+}
+.lightTheme {
+  background-color: antiquewhite;
+}
+.darkTheme {
+  background-color: #431d94;
+}
+.header__language {
+  float: right;
+  font-size: 20px;
+}
+.header__language button {
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin: 10px 30px 0 0;
+  transition: 0.2s linear;
+}
+.header__language button:hover {
+  color: yellow;
+  background-color: #333;
+  border: 2px solid black;
+  transition: 0.2s linear;
+}
+.header__theme {
+  float: left;
+  font-size: 20px;
+}
+.header__theme button {
+  width: 100px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin: 10px 30px 0 0;
+  transition: 0.2s linear;
+}
+.header__theme button:hover {
+  color: #04ff00;
+  background-color: #333;
+  border: 2px solid black;
+  transition: 0.2s linear;
+}
+.header .lgActive {
+  color: yellow;
+  background-color: #333;
+  transition: 3s linear;
+}
+.header .ThemeActive {
+  color: #04ff00;
+  background-color: #333;
+  transition: 3s linear;
+}
+.sidebar {
+  color: #fff;
+  font-size: 20px;
+  background-color: #2b818d;
+}
+.sidebar ul {
+  list-style: none;
+}
+.sidebar li {
+  margin-bottom: 30px;
+}
+.sidebar a {
+  text-decoration: none;
+  color: #fff;
+}
+.sidebar a:hover {
+  color: yellow;
+  transition: 0.3s linear;
+  -webkit-text-stroke: 0.3px #000000;
+}
+.sidebar .active {
+  color: yellow;
+  transition: 0.3s linear;
+  -webkit-text-stroke: 0.3px #000000;
+}
+.lightSidebar {
+  color: #000000;
+  font-size: 20px;
+  background-color: #d8dcdc;
+}
+.lightSidebar ul {
+  list-style: none;
+}
+.lightSidebar li {
+  margin-bottom: 30px;
+}
+.lightSidebar a {
+  text-decoration: none;
+  color: #000000;
+}
+.lightSidebar a:hover {
+  color: #00ff11;
+  transition: 0.3s linear;
+  -webkit-text-stroke: 0.3px #000000;
+}
+.lightSidebar .active {
+  color: #15b920;
+  transition: 0.3s linear;
+  -webkit-text-stroke: 0.1px #000000;
+}
+.main {
+  background-color: #2b1a8a;
+}
+.main__toDoList {
+  padding: 30px 0;
+  text-align: center;
+  background-color: #233b6b;
+  width: 100%;
+}
+.main__toDoList ul {
+  list-style: none;
+  font-size: 30px;
+  color: #fff;
+}
+.main__toDoList ul button {
+  float: right;
+}
+.main__toDoList li {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+.main__toDoList input {
+  padding: 10px;
+  margin: 0 0 30px 0;
+  font-size: 30px;
+  border-radius: 40px;
+  width: 70%;
+  text-align: center;
+}
+.main__toDoList .saveButton {
+  font-size: 20px;
+  border-radius: 30px;
+  padding: 10px;
+  width: 150px;
+  background-color: azure;
+  border: 1px solid black;
+}
+.main__toDoList .saveButton:hover {
+  background-color: aqua;
+}
+.main__toDoList .changeItem {
+  color: yellow;
+}
+.main__toDoList .changeButton,
+.main__toDoList .deleteButton {
+  font-size: 20px;
+  border-radius: 30px;
+  padding: 10px;
+  width: 100px;
+  background-color: azure;
+  border: 1px solid black;
+}
+.main__toDoList .changeButton:hover,
+.main__toDoList .deleteButton:hover {
+  background-color: aqua;
+}

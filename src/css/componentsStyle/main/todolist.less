@@ -1,0 +1,60 @@
+.main {
+    &__toDoList {
+        padding: 30px 0;
+        text-align: center;
+        background-color: rgb(35, 59, 107);
+        width: 100%;
+
+        ul {
+            list-style: none;
+            font-size: 30px;
+            color: #fff;
+
+            button {
+                float: right;
+            }
+
+        }
+        li {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+        input {
+            padding: 10px;
+            margin: 0 0 30px 0;
+            font-size: 30px;
+            border-radius: 40px;
+            width: 70%;
+            text-align: center;
+
+        }
+        .saveButton {
+            font-size: 20px;
+            border-radius: 30px;
+            padding: 10px;
+            width: 150px;
+            background-color: azure;
+            border: 1px solid black;
+
+            &:hover {
+                background-color: aqua;
+            }
+        }
+        .changeItem {
+            color: yellow;
+        }
+        .changeButton, .deleteButton {
+            font-size: 20px;
+            border-radius: 30px;
+            padding: 10px;
+            width: 100px;
+            background-color: azure;
+            border: 1px solid black;
+
+            &:hover {
+                background-color: aqua;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.wrapper {
+    display: grid;
+    grid-template-areas: "header header header"
+                         "sidebar main footer";
+                        //  grid-template-rows: 1fr auto-fill;
+                         grid-template-columns: 1fr 3fr 1fr;
+}
+.header, .main, .footer, .sidebar {
+    border: 1px solid black;
+}
+.header {
+    grid-area: header;
+}
+.sidebar {
+    grid-area: sidebar;
+}
+.main {
+    grid-area: main;
+}
+.footer {
+    grid-area: footer;
+}
+.lightTheme {
+    background-color: antiquewhite;
+}
+.darkTheme {
+    background-color: rgb(67, 29, 148);
+}
+
+@import url("./componentsStyle/header.less");
+@import url("./componentsStyle/sidebar.less");
+@import url("./componentsStyle/main.less");

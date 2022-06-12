@@ -1,0 +1,52 @@
+.header {
+    &__language {
+        float: right;
+        font-size: 20px;
+        
+        & button {
+            padding: 10px 20px;
+            border-radius: 30px;
+            margin: 10px 30px 0 0;
+            transition: 0.2s linear;
+
+            &:hover {
+                color: yellow;
+                background-color: #333;
+                border: 2px solid black;
+                transition: 0.2s linear;
+            }
+
+        }
+    }
+    
+    &__theme {
+        float: left;
+        font-size: 20px;
+        & button {
+            width: 100px;
+            padding: 10px 20px;
+            border-radius: 30px;
+            margin: 10px 30px 0 0;
+            transition: 0.2s linear;
+
+            &:hover {
+                color: rgb(4, 255, 0);
+                background-color: #333;
+                border: 2px solid black;
+                transition: 0.2s linear;
+            }
+
+        }
+    }
+    .lgActive {
+        color: yellow;
+        background-color: #333;
+        transition: 3s linear;
+    }
+    .ThemeActive {
+        color: rgb(4, 255, 0);
+        background-color: #333;
+        transition: 3s linear;
+    }
+   
+}
